@@ -1,4 +1,4 @@
-module Ajani5978_sr (input [7:0] sw, output[3:0] led, input c1k);
+module Shift_Register (input [7:0] sw, output[3:0] led, input c1k);
 reg[6:3] R;
 always@(posedge c1k)
 begin 
