@@ -9,16 +9,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity Ajani5978_Cc is
+entity Crosswalk_Controller is
  port ( sw : in STD_LOGIC; 						-- Reset for Push Button
         clk  : in STD_LOGIC;                 -- clock for Push button
 		  HEX : out STD_LOGIC_VECTOR(6 downto 0);   -- HEX[0] for counter
 		  HEX1 : out STD_LOGIC_VECTOR (6 downto 0); -- HEX[5] for GO/Stop
         LED_out: out STD_LOGIC_VECTOR(2 downto 0) -- LED for traffic Lights
    );
-end Ajani5978_Cc;
+end Crosswalk_Controller;
 
-architecture crosswalk of Ajani5978_Cc is 
+architecture crosswalk of Crosswalk_Controller is 
 	type 	state_variables is (green ,green_wait,yellow,yellow_wait,red,red_wait);
 		signal CLK_DIV : STD_LOGIC;														-- Clock input
 		signal state : state_variables;
