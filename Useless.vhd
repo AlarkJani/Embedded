@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity AjaniLab1 is
+entity Useless is
 
 	port(A : in std_logic;
 		  B : in std_logic;
 		  Y : out std_logic);
 		  
-		 end AjaniLab1;
+		 end Useless;
 		 
-		 architecture andlogic of AjaniLab1 is
+		 architecture andlogic of Useless is
 		 
 begin
 		Y <= A and B;
