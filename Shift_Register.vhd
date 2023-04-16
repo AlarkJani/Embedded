@@ -1,13 +1,13 @@
 library IEEE;													-- Arithmetic Library
 use IEEE.STD_LOGIC_1164.all;								-- Logic library
 
-entity Ajani5978_sr is										-- entity declaration
+entity Shift_Register is										-- entity declaration
 port(Sw:in std_logic_vector (7 downto 0);          -- input switches[8]
 	  LEDR:Out Std_logic_vector (3 downto 0); 		-- output LEDs[4]
 	  CLK:in std_logic);										-- input Clock Signal
-end Ajani5978_sr;
+end Shift_Register;
 
-architecture RTL of Ajani5978_sr  is					-- Architecture
+architecture RTL of Shift_Register  is					-- Architecture
 	signal R: Std_logic_vector (6 downto 3);			-- Assignation of Register
 	signal s: Std_logic_vector (1 downto 0);			-- for function selector
 	
